@@ -101,6 +101,12 @@ Issues = "https://github.com/dpalacioj/data-projects-lab/issues"
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+# Este repositorio no se distribuye como paquete: es una coleccion de
+# proyectos educativos. Le decimos a hatchling que no intente empaquetar
+# nada para que `uv sync` pueda instalar dependencias sin error.
+[tool.hatch.build.targets.wheel]
+bypass-selection = true
+
 [tool.black]
 line-length = 100
 target-version = ['py311']
