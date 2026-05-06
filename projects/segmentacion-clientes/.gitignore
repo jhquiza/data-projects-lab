@@ -1,0 +1,49 @@
+# Datos crudos y procesados (se generan al ejecutar los notebooks)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+
+# Modelos entrenados (artefactos)
+models/*.pkl
+models/*.joblib
+models/*.json
+!models/.gitkeep
+
+# Reportes generados
+reports/figures/*.png
+reports/figures/*.html
+!reports/figures/.gitkeep
+
+# Notebooks
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
